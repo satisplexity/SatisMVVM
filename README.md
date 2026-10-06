@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/satisplexity/SatisMVVM/assets/SatisMVVM.png"
+  <img src="https://raw.githubusercontent.com/satisplexity/SatisMVVM/main/assets/SatisMVVM.png"
        width="128"
        alt="SatisMVVM logo">
 </p>
