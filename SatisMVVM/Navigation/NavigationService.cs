@@ -23,7 +23,7 @@ public abstract class NavigationService : ObservableObject, INavigationService, 
     /// <summary>
     /// Gets the currently active view model.
     /// </summary>
-    public ViewModelBase CurrentViewModel => _store.CurrentViewModel;
+    public ViewModelBase? CurrentViewModel => _store.CurrentViewModel;
 
     /// <summary>
     /// Gets a value indicating whether navigation to a previous view model is possible.
