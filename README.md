@@ -6,8 +6,6 @@
 
 <h1 align="center">SatisMVVM</h1>
 
-# SatisMVVM
-
 A lightweight MVVM library for .NET with observable objects, commands, and view-model navigation.
 
 [NuGet](https://www.nuget.org/packages/SatisMVVM) · [GitHub](https://github.com/satisplexity/SatisMVVM) · [MIT License](https://github.com/satisplexity/SatisMVVM/blob/main/LICENSE)
