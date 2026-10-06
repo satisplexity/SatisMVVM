@@ -7,7 +7,7 @@ namespace SatisMVVM.Core;
 /// Provides a base class for objects that notify clients when property values change.
 /// </summary>
 /// <remarks>
-/// Implements <see cref="INotifyPropertyChanged"/> and provides helper methods
+/// Implements <see cref="INotifyPropertyChanged"/> and provides helper methods 
 /// for raising property change notifications and updating property values.
 /// </remarks>
 public abstract class ObservableObject : INotifyPropertyChanged
@@ -24,11 +24,8 @@ public abstract class ObservableObject : INotifyPropertyChanged
     /// The name of the property that changed. Automatically supplied by the compiler
     /// when omitted.
     /// </param>
-    protected void OnPropertyChanged(
-        [CallerMemberName] string? propertyName = null)
-        => PropertyChanged?.Invoke(
-            this,
-            new PropertyChangedEventArgs(propertyName));
+    protected void OnPropertyChanged([CallerMemberName] string? propertyName = null)
+        => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
     /// <summary>
     /// Updates a field if its value differs from the specified value
@@ -45,10 +42,7 @@ public abstract class ObservableObject : INotifyPropertyChanged
     /// <see langword="true"/> if the field was updated;
     /// otherwise, <see langword="false"/>.
     /// </returns>
-    protected bool SetProperty<T>(
-        ref T field,
-        T value,
-        [CallerMemberName] string? propertyName = null)
+    protected bool SetProperty<T>(ref T field, T value, [CallerMemberName] string? propertyName = null)
     {
         if (EqualityComparer<T>.Default.Equals(field, value))
             return false;
@@ -59,5 +53,4 @@ public abstract class ObservableObject : INotifyPropertyChanged
 
         return true;
     }
-
 }
